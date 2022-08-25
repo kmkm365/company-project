@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <!--localstorage sessionstorage 특정 저장 공간 -->
+
+    <body>
+        <script>
+            //localStorage :직접 삭제하기 전까지는 (현재 사용하고 있는 기기의) 웹브라우저에 남아있음
+            //로그인이나 로그아웃했을때도 남아있기 원하는 정보
+            //sessionStorage :브라우저 창을 닫는 순간 사라짐
+            localStorage.setItem("name", "myoung yoon");
+            sessionStorage.setItem("name2", "kim");
+            let arr = ["a", "b"];
+            arr.pop();
+            console.log(arr);
+            localStorage.setItem("arr", JSON.stringify(arr));
+
+
+        </script>
+    </body>
+
+</html>
